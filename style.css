@@ -1,0 +1,55 @@
+body {
+  margin: 0 auto 0 auto;
+  width: 1400px; }
+
+header {
+  display: inline-block;
+  width: 100%;
+  background: #dcdcdc; }
+  header #name {
+    float: left;
+    width: 300px; }
+  header img {
+    float: left; }
+  header #phone {
+    float: right; }
+
+nav {
+  background: #777777;
+  text-align: center; }
+  nav a:link {
+    text-decoration: none; }
+  nav a:visited {
+    text-decoration: none; }
+  nav a:hover {
+    text-decoration: underline; }
+  nav a:active {
+    text-decoration: underline; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  nav li {
+    display: inline; }
+  nav li:not(:last-child) {
+    border-right: solid 5px white; }
+
+section {
+  margin: 0 auto 150px auto;
+  display: inline-block;
+  width: 1000px; }
+  section aside {
+    float: left;
+    background: #777777; }
+  section ul {
+    list-style-type: none; }
+  section article {
+    float: right; }
+
+footer {
+  width: 100%;
+  background: #777777; }
+  footer div {
+    display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

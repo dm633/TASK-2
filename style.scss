@@ -1,0 +1,95 @@
+@import 'colors';
+
+body {
+	margin: 0 auto 0 auto;
+	width: 1400px;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+	background: $light-grey;
+
+	#name {
+		float: left;
+		width: 300px;
+		
+	}
+
+	img {
+		float: left;
+	}
+
+	#phone {
+		float: right;
+	}
+}
+
+nav {
+	background: $grey;
+	
+	text-align: center;
+	
+	a:link {
+    	text-decoration: none;
+	}
+
+	a:visited {
+	    text-decoration: none;
+	}
+
+	a:hover {
+	    text-decoration: underline;
+	}
+
+	a:active {
+	    text-decoration: underline;
+	}
+
+	ul {
+		list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+	}
+
+	li {
+		display: inline;
+	}
+
+	li:not(:last-child) { 
+    	border-right: solid 5px white;
+	}
+}
+
+section {
+	margin: 0 auto 150px auto;
+	display: inline-block;
+	width: 1000px;
+
+	aside {
+		float: left;
+		background: $grey;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	article {
+		float: right;
+	}
+}
+
+footer {
+	
+	width: 100%;
+	background: $grey;
+
+	div {
+		display: inline-block;
+	}
+
+	ul {
+		
+	}
+}
