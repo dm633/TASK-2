@@ -3,25 +3,71 @@
 body {
 	margin: 0 auto 0 auto;
 	width: 1400px;
+	p, a {
+		font: 14px Arial;
+	}
+
+	a:link, a:visited, a:hover, a:active{
+    	color: white;
+	}
 }
 
 header {
-	display: inline-block;
-	width: 100%;
+	display: block;
+	
 	background: $light-grey;
+	padding: 65px 150px 75px 210px;
 
-	#name {
+	color: $grey;
+
+	.name {
+		display: inline;
 		float: left;
-		width: 300px;
+		width: 280px;
 		
-	}
+		
+		img {
+			display: inline;
+			float: left;
+			margin-right: 12px;
+		}
 
-	img {
-		float: left;
+		h1 {
+			display: inline;
+
+			position: relative;
+			top: 10px;
+
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px; 
+			font: 30px Arial;
+			font-weight: 700;
+			line-height: 20px;
+		}
+
+		p {
+			display: inline;
+			position: relative;
+			top: 20px;
+
+			font-weight: 600;
+			color: lighten($grey, 10%);
+		}
+
+		margin-right: 430px;
 	}
 
 	#phone {
-		float: right;
+		display: inline;
+		
+		position: relative;
+		top: 0px;
+
+		p {
+			font: 33px/46px Verdana;
+			margin: 0px 0px 0px 0px;
+			letter-spacing: -3px;
+		}
 	}
 }
 
@@ -30,6 +76,64 @@ nav {
 	
 	text-align: center;
 	
+	color: white;
+
+
+	ul {
+		list-style-type: none;
+    	margin: 0;
+    	padding: 17px 15px 29px 15px;
+	}
+
+	li {
+		display: inline;
+		padding: 0px 15px;
+		font-size: 20px;
+		
+	}
+
+	li:not(:last-child) { 
+    	border-right: solid 2px white;
+	}
+
+	a {
+		font: 26px Verdana;
+			
+	}
+}
+
+section {
+	
+	display: inline-block;
+	width: 1000px;
+	
+
+	padding: 25px 0px 200px 210px;
+	
+	aside {
+		float: left;
+		margin-right: 58px;
+		width: 350px;
+		background: $grey;
+
+		color: white;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	article {
+
+		color: $grey;
+		
+		p {
+			font: 12px/22px Verdana;
+		}
+	}
+}
+
+nav, section aside ul {
 	a:link {
     	text-decoration: none;
 	}
@@ -45,51 +149,31 @@ nav {
 	a:active {
 	    text-decoration: underline;
 	}
-
-	ul {
-		list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-	}
-
-	li {
-		display: inline;
-	}
-
-	li:not(:last-child) { 
-    	border-right: solid 5px white;
-	}
-}
-
-section {
-	margin: 0 auto 150px auto;
-	display: inline-block;
-	width: 1000px;
-
-	aside {
-		float: left;
-		background: $grey;
-	}
-
-	ul {
-		list-style-type: none;
-	}
-
-	article {
-		float: right;
-	}
 }
 
 footer {
-	
+	display: inline-block;
 	width: 100%;
 	background: $grey;
+
+	color: white;
 
 	div {
 		display: inline-block;
 	}
 
-	ul {
-		
+	#nav {
+		ul {
+			list-style-type: none;
+		}
+	}
+
+	#info {
+		@extend .name;
+		float: right; 
+
+		img {
+			float: left;
+		}
 	}
 }
