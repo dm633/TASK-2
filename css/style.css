@@ -1,55 +1,104 @@
 body {
   margin: 0 auto 0 auto;
   width: 1400px; }
+  body p, body a {
+    font: 14px Arial; }
+  body a:link, body a:visited, body a:hover, body a:active {
+    color: white; }
 
 header {
-  display: inline-block;
-  width: 100%;
-  background: #dcdcdc; }
-  header #name {
+  display: block;
+  background: #dcdcdc;
+  padding: 65px 150px 75px 210px;
+  color: #777777; }
+  header .name, header footer #info, footer header #info {
+    display: inline;
     float: left;
-    width: 300px; }
-  header img {
-    float: left; }
+    width: 280px;
+    margin-right: 430px; }
+    header .name img, header footer #info img, footer header #info img {
+      display: inline;
+      float: left;
+      margin-right: 12px; }
+    header .name h1, header footer #info h1, footer header #info h1 {
+      display: inline;
+      position: relative;
+      top: 10px;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      font: 30px Arial;
+      font-weight: 700;
+      line-height: 20px; }
+    header .name p, header footer #info p, footer header #info p {
+      display: inline;
+      position: relative;
+      top: 20px;
+      font-weight: 600;
+      color: #919191; }
   header #phone {
-    float: right; }
+    display: inline;
+    position: relative;
+    top: 0px; }
+    header #phone p {
+      font: 33px/46px Verdana;
+      margin: 0px 0px 0px 0px;
+      letter-spacing: -3px; }
 
 nav {
   background: #777777;
-  text-align: center; }
-  nav a:link {
-    text-decoration: none; }
-  nav a:visited {
-    text-decoration: none; }
-  nav a:hover {
-    text-decoration: underline; }
-  nav a:active {
-    text-decoration: underline; }
+  text-align: center;
+  color: white; }
   nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0; }
+    padding: 17px 15px 29px 15px; }
   nav li {
-    display: inline; }
+    display: inline;
+    padding: 0px 15px;
+    font-size: 20px; }
   nav li:not(:last-child) {
-    border-right: solid 5px white; }
+    border-right: solid 2px white; }
+  nav a {
+    font: 26px Verdana; }
 
 section {
-  margin: 0 auto 150px auto;
   display: inline-block;
-  width: 1000px; }
+  width: 1000px;
+  padding: 25px 0px 200px 210px; }
   section aside {
     float: left;
-    background: #777777; }
+    margin-right: 58px;
+    width: 350px;
+    background: #777777;
+    color: white; }
   section ul {
     list-style-type: none; }
   section article {
-    float: right; }
+    color: #777777; }
+    section article p {
+      font: 12px/22px Verdana; }
+
+nav a:link, section aside ul a:link {
+  text-decoration: none; }
+nav a:visited, section aside ul a:visited {
+  text-decoration: none; }
+nav a:hover, section aside ul a:hover {
+  text-decoration: underline; }
+nav a:active, section aside ul a:active {
+  text-decoration: underline; }
 
 footer {
+  display: inline-block;
   width: 100%;
-  background: #777777; }
+  background: #777777;
+  color: white; }
   footer div {
     display: inline-block; }
+  footer #nav ul {
+    list-style-type: none; }
+  footer #info {
+    float: right; }
+    footer #info img {
+      float: left; }
 
 /*# sourceMappingURL=style.css.map */
