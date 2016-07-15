@@ -11,16 +11,16 @@ header {
   background: #dcdcdc;
   padding: 65px 150px 75px 210px;
   color: #777777; }
-  header .name, header footer #info, footer header #info {
+  header .name {
     display: inline;
     float: left;
     width: 280px;
     margin-right: 430px; }
-    header .name img, header footer #info img, footer header #info img {
+    header .name img {
       display: inline;
       float: left;
       margin-right: 12px; }
-    header .name h1, header footer #info h1, footer header #info h1 {
+    header .name h1 {
       display: inline;
       position: relative;
       top: 10px;
@@ -29,7 +29,7 @@ header {
       font: 30px Arial;
       font-weight: 700;
       line-height: 20px; }
-    header .name p, header footer #info p, footer header #info p {
+    header .name p {
       display: inline;
       position: relative;
       top: 20px;
@@ -62,20 +62,50 @@ nav {
     font: 26px Verdana; }
 
 section {
-  display: inline-block;
+  display: table;
   width: 1000px;
-  padding: 25px 0px 200px 210px; }
+  padding: 25px 0px 195px 210px; }
+  section #row {
+    display: table-row; }
   section aside {
-    float: left;
-    margin-right: 58px;
-    width: 350px;
-    background: #777777;
+    display: table-cell;
     color: white; }
-  section ul {
-    list-style-type: none; }
+    section aside #news {
+      background: #777777;
+      width: 260px;
+      padding: 13px 55px 120px 34px; }
+    section aside ul {
+      list-style-type: none;
+      padding: 0; }
+    section aside li {
+      line-height: 26px;
+      padding-bottom: 5px; }
+    section aside h1 {
+      font: 900 37px Arial;
+      margin-top: 2px;
+      margin-bottom: 28px; }
+    section aside p {
+      font: oblique 14px Georgia;
+      margin-bottom: 0; }
+    section aside a {
+      font-weight: 500;
+      font-size: 13.5px; }
+    section aside .active {
+      float: right;
+      margin-top: 5px; }
   section article {
-    color: #777777; }
+    display: table-cell;
+    display: block;
+    color: #777777;
+    margin-left: 60px;
+    padding-right: 40px; }
+    section article h1 {
+      font: 500 37px Verdana;
+      margin-top: 8px;
+      margin-bottom: 19px;
+      letter-spacing: -1px; }
     section article p {
+      margin: 20px 0px;
       font: 12px/22px Verdana; }
 
 nav a:link, section aside ul a:link {
@@ -88,17 +118,36 @@ nav a:active, section aside ul a:active {
   text-decoration: underline; }
 
 footer {
-  display: inline-block;
+  display: table;
   width: 100%;
   background: #777777;
   color: white; }
+  footer #row {
+    display: table-row; }
   footer div {
-    display: inline-block; }
-  footer #nav ul {
-    list-style-type: none; }
+    display: table-cell; }
+  footer #copyright {
+    padding: 35px 0px 0px 210px; }
+    footer #copyright p {
+      margin-bottom: 0; }
+  footer #nav {
+    padding: 0px 183px 0px 0px; }
+  footer ul {
+    list-style-type: none;
+    line-height: 26px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px; }
   footer #info {
-    float: right; }
-    footer #info img {
-      float: left; }
+    width: 250px; }
+    footer #info h1 {
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      font: 14px Arial;
+      line-height: 20px; }
+    footer #info b {
+      text-decoration: underline;
+      font-weight: 400; }
+    footer #info p {
+      margin-top: 8px; }
 
 /*# sourceMappingURL=style.css.map */
