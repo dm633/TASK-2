@@ -53,13 +53,12 @@ header {
 			font-weight: 600;
 			color: lighten($grey, 10%);
 		}
-
+		
 		margin-right: 430px;
 	}
 
 	#phone {
 		display: inline;
-		
 		position: relative;
 		top: 0px;
 
@@ -73,11 +72,8 @@ header {
 
 nav {
 	background: $grey;
-	
 	text-align: center;
-	
 	color: white;
-
 
 	ul {
 		list-style-type: none;
@@ -88,8 +84,7 @@ nav {
 	li {
 		display: inline;
 		padding: 0px 15px;
-		font-size: 20px;
-		
+		font-size: 20px;	
 	}
 
 	li:not(:last-child) { 
@@ -97,37 +92,78 @@ nav {
 	}
 
 	a {
-		font: 26px Verdana;
-			
+		font: 26px Verdana;	
 	}
 }
 
 section {
-	
-	display: inline-block;
+	display: table;
 	width: 1000px;
-	
+	padding: 25px 0px 195px 210px;
 
-	padding: 25px 0px 200px 210px;
-	
-	aside {
-		float: left;
-		margin-right: 58px;
-		width: 350px;
-		background: $grey;
-
-		color: white;
+	#row {
+		display: table-row;
 	}
 
-	ul {
-		list-style-type: none;
+	aside {
+		display: table-cell;
+		color: white;
+
+		#news{
+			background: $grey;
+			width: 260px;
+			padding: 13px 55px 120px 34px;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		li {
+			line-height: 26px;
+			padding-bottom: 5px;
+		}
+
+		h1 {
+			font: 900 37px Arial;
+			margin-top: 2px;
+			margin-bottom: 28px;
+		}
+
+		p {
+			font: oblique 14px Georgia;
+			margin-bottom: 0;
+		}
+
+		a {
+			font-weight: 500;
+			font-size: 13.5px;
+		}
+
+		.active {
+			float: right;
+			margin-top: 5px;
+		}
 	}
 
 	article {
-
+		display: table-cell;
+		display: block;
 		color: $grey;
 		
+		margin-left: 60px;
+		padding-right: 40px;
+
+		h1 {
+			font: 500 37px Verdana;
+			margin-top: 8px;
+			margin-bottom: 19px;
+			letter-spacing: -1px;
+		}
+
 		p {
+			margin: 20px 0px;
 			font: 12px/22px Verdana;
 		}
 	}
@@ -152,28 +188,59 @@ nav, section aside ul {
 }
 
 footer {
-	display: inline-block;
+	display: table;
 	width: 100%;
 	background: $grey;
 
 	color: white;
 
-	div {
-		display: inline-block;
+	#row {
+		display: table-row;
 	}
 
-	#nav {
-		ul {
-			list-style-type: none;
+	div {
+		display: table-cell;
+	}
+
+	#copyright {
+		padding: 35px 0px 0px 210px;
+
+		p {
+			margin-bottom: 0;
 		}
 	}
 
-	#info {
-		@extend .name;
-		float: right; 
+	#nav {
+		padding: 0px 183px 0px 0px;
+	}
 
-		img {
-			float: left;
+	ul {
+		list-style-type: none;
+		line-height: 26px;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px; 
+	}
+
+	#info {
+		width: 250px;
+
+		h1 {
+			
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px; 
+			font: 14px Arial;
+			
+			line-height: 20px;
+		}
+
+		b {
+			text-decoration: underline;
+			font-weight: 400;
+		}
+
+		p {
+			margin-top: 8px;
+		
 		}
 	}
 }
