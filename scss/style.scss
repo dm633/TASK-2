@@ -8,7 +8,7 @@ body {
 	}
 
 	a:link, a:visited, a:hover, a:active{
-    	color: white;
+		color: white;
 	}
 }
 
@@ -26,8 +26,11 @@ header {
 		width: 280px;
 		
 		
-		img {
+		#img {
 			display: inline;
+			width: 100px;
+			height: 100px;
+			background: $grey;
 			float: left;
 			margin-right: 12px;
 		}
@@ -77,8 +80,8 @@ nav {
 
 	ul {
 		list-style-type: none;
-    	margin: 0;
-    	padding: 17px 15px 29px 15px;
+		margin: 0;
+		padding: 17px 15px 29px 15px;
 	}
 
 	li {
@@ -87,8 +90,8 @@ nav {
 		font-size: 20px;	
 	}
 
-	li:not(:last-child) { 
-    	border-right: solid 2px white;
+	li:not(:last-child) {
+		border-right: solid 2px white;
 	}
 
 	a {
@@ -96,10 +99,59 @@ nav {
 	}
 }
 
+.img2 {
+	position: relative;
+	overflow: hidden;
+	width: 1400px;
+	height: 400px;
+	background: $white;
+
+	@mixin border-radius($n, $e, $s, $w, $size, $radius) {
+		position: absolute;
+		opacity: 0.35;
+
+		margin-top: $n;
+		margin-right: $e;
+		margin-bottom: $s;
+		margin-left: $w;
+
+		width: $size;
+		height: $size;
+		-moz-border-radius: $radius; 
+		-webkit-border-radius: $radius; 
+		border-radius: $radius;
+	}
+
+	.r1 {
+		@include border-radius(105px, 0px, 0px, 80px, 326px, 50%);
+		background: darken($blue, 20%);	
+	}
+	.r2 {
+		@include border-radius(50px, 0px, 0px, 331px, 174px, 50%);
+		background: darken($green, 20%);	
+	}
+	.r3 {
+		@include border-radius(52px, 0px, 0px, 486px, 300px, 50%);
+		background: darken($red, 20%);
+	}
+	.r4 {
+		@include border-radius(72px, 0px, 0px, 845px, 226px, 50%);
+		background: darken($blue, 20%);
+	}
+	.r5 {
+		@include border-radius(-65px, 0px, 0px, 1030px, 300px, 50%);
+		background: darken($red, 20%);
+	}
+	.r6 {
+		@include border-radius(199px, 0px, 0px, 1152px, 178px, 50%);
+		background: darken($green, 20%);
+	}
+}
+
 section {
 	display: table;
 	width: 1000px;
-	padding: 25px 0px 195px 210px;
+	padding: 30px 0px 195px 210px;
 
 	#row {
 		display: table-row;
@@ -121,8 +173,8 @@ section {
 		}
 
 		li {
-			line-height: 26px;
-			padding-bottom: 5px;
+			line-height: 23px;
+			padding-bottom: 11px;
 		}
 
 		h1 {
@@ -171,19 +223,19 @@ section {
 
 nav, section aside ul {
 	a:link {
-    	text-decoration: none;
+		text-decoration: none;
 	}
 
 	a:visited {
-	    text-decoration: none;
+		text-decoration: none;
 	}
 
 	a:hover {
-	    text-decoration: underline;
+		text-decoration: underline;
 	}
 
 	a:active {
-	    text-decoration: underline;
+		text-decoration: underline;
 	}
 }
 
