@@ -11,50 +11,50 @@ header {
   background: #dcdcdc;
   padding: 65px 150px 75px 210px;
   color: #777777; }
-  header .name {
-    display: inline;
+  header div {
+    display: inline; }
+  header #name {
     float: left;
     width: 280px;
     margin-right: 430px; }
-    header .name #img {
-      display: inline;
+    header #name #img {
       width: 100px;
       height: 100px;
       background: #777777;
       float: left;
       margin-right: 12px; }
-    header .name h1 {
+    header #name h1 {
       display: inline;
       position: relative;
       top: 10px;
-      padding: 0px 0px 0px 0px;
-      margin: 0px 0px 0px 0px;
+      padding: 0;
+      margin: 0;
       font: 30px Arial;
       font-weight: 700;
       line-height: 20px; }
-    header .name p {
+    header #name p {
       display: inline;
       position: relative;
       top: 20px;
       font-weight: 600;
       color: #919191; }
   header #phone {
-    display: inline;
     position: relative;
-    top: 0px; }
+    top: 0; }
     header #phone p {
       font: 33px/46px Verdana;
-      margin: 0px 0px 0px 0px;
+      margin: 0;
       letter-spacing: -3px; }
+
+.list, section aside ul, footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 17px 15px 29px 15px; }
 
 nav {
   background: #777777;
   text-align: center;
   color: white; }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 17px 15px 29px 15px; }
   nav li {
     display: inline;
     padding: 0px 15px;
@@ -163,7 +163,7 @@ section {
       width: 260px;
       padding: 13px 55px 120px 34px; }
     section aside ul {
-      list-style-type: none;
+      margin: 16px 0px;
       padding: 0; }
     section aside li {
       line-height: 23px;
@@ -206,36 +206,39 @@ nav a:active, section aside ul a:active {
   text-decoration: underline; }
 
 footer {
-  display: table;
-  width: 100%;
+  display: block;
   background: #777777;
   color: white; }
-  footer #row {
-    display: table-row; }
   footer div {
-    display: table-cell; }
+    display: inline-block; }
   footer #copyright {
-    padding: 35px 0px 0px 210px; }
+    float: left;
+    padding: 34px 0px 0px 210px; }
     footer #copyright p {
       margin-bottom: 0; }
   footer #nav {
-    padding: 0px 183px 0px 0px; }
+    padding: 40px 0px 0px 145px; }
   footer ul {
-    list-style-type: none;
     line-height: 26px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px; }
+    padding: 0; }
   footer #info {
-    width: 250px; }
+    float: right;
+    width: 220px;
+    padding: 47px 215px 0px 0px; }
+    footer #info #image {
+      display: inline;
+      float: left; }
     footer #info h1 {
-      padding: 0px 0px 0px 0px;
-      margin: 0px 0px 0px 0px;
+      display: inline;
+      padding: 0;
+      margin: 0;
       font: 14px Arial;
       line-height: 20px; }
     footer #info b {
       text-decoration: underline;
       font-weight: 400; }
     footer #info p {
+      display: inline;
       margin-top: 8px; }
 
 /*# sourceMappingURL=style.css.map */
