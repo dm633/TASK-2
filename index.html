@@ -4,8 +4,36 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Компания «Пиксель Плюс»</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script>
+			function div_show() {
+				document
+					.getElementById('popupContact')
+					.style.display = "block";
+			}
+			function div_hide(){
+				document
+					.getElementById('popupContact')
+					.style.display = "none";
+			}	
+		</script>
 	</head>
 	<body>
+		<div id="popupContact">
+			<form action="#" id="form" method="post" name="form">
+				<h1>ОБРАТНАЯ СВЯЗЬ</h1>
+				<p>Ваше имя</p>
+				<input id="name" name="name" type="text">
+				<p>Телефон</p>
+				<input id="phone" name="phone" type="text">
+				<p>Email</p>
+				<input id="email" name="email" type="text">
+				<p>Сообщение</p>
+				<textarea id="msg" name="message"></textarea>
+				<a href=" " id="submit">ОТПРАВИТЬ</a>
+			</form>
+
+		</div>
+
 		<header>
 			<div id="name">
 				<div id="img"> </div>
@@ -25,7 +53,7 @@
 				<li><a href="#catalog">Каталог</a></li>
 				<li><a href="#delivery">Доставка и оплата</a></li>
 				<li><a href="#price">Прайс-лист</a></li>
-				<li><a href="#contacts">Контакты</a></li>
+				<li><a id="popup" href="#contacts" onclick="div_show()">Контакты</a></li>
 			</ul>
 		</nav>
 
@@ -79,7 +107,7 @@
 					<li><a href="#catalog">Каталог</a></li>
 					<li><a href="#delivery">Доставка и оплата</a></li>
 					<li><a href="#price">Прайс-лист</a></li>
-					<li><a href="#contacts">Контакты</a></li>
+					<li><a id="popup" href="#contacts" onclick="div_show()">Контакты</a></li>
 				</ul>
 			</div>	
 
