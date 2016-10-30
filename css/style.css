@@ -8,7 +8,7 @@ body {
     color: white; }
 
 #popupContact {
-  width: 100%;
+  width: inherit;
   height: 100%;
   display: none;
   position: fixed;
@@ -19,7 +19,7 @@ body {
     width: 367px;
     padding: 10px 50px;
     background-color: #fff;
-    margin: 50px auto 50px auto; }
+    margin: 8% auto 50px auto; }
   #popupContact h1 {
     text-align: center;
     font: 500 23px/46px Verdana;
